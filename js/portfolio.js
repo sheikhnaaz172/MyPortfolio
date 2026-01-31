@@ -1,4 +1,4 @@
- const name = document.getElementById("nameToggle");
+ const name = document.getElementById("name");
   const dropdown = document.getElementById("contactDropdown");
 
   name.addEventListener("click", () => {
