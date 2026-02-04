@@ -3,27 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MY Portfolio</title>
-    
-        <link rel="stylesheet" href="css/portfolio.css">
-    
+    <title>Document</title>
+    <link rel="stylesheet" href="css/portfolio.css">
 </head>
- <div class="header">
-    <h1>Shaik Asma</h1>
-    <h3>Java Developer</h3>
-    <p></p>
-    </div>
-    
 <body>
-    <div class="remainingpage">
-        <div class="paralletoimg">
-            <h2> About Me :</h2>
-            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Java Backend Developer with experience in designing, developing, and maintaining enterprise-level applications using Java, Spring Boot, and SQL. Proficient in RESTful API development, database integration, and writing efficient, maintainable code. Delivered 15+ production-ready solutions while continuously upgrading skills with modern backend technologies.</p>
-        <section class="section">
-    <h2>Technical Proficiency</h2>
-    <div class="skills">
-        
-        <span>Java</span>
+    <div id="whole" class="whole">
+    <div id="profiledetails" class="profiledetails">
+        <div id="image" class="image">
+            <img src="images/img.JPG">
+            <h2>Shaik Asma</h3>
+            <h3>Java Backend Developer</h3>
+            <p>📧 shaikasma914@gmail.com</p>
+    <p>📞 +91-6304501028</p>
+    <p><a href="https://www.linkedin.com/in/asma-sheikh-0156b3196">My LinkedIN</a></p>
+    <p><a href="https://github.com/sheikhnaaz172">GitHub Profile</a></p>
+    <p><a href="assets/resume/NShaikAsma.pdf" download class="resume-btn">Download Resume</a></p>      
+</div>
+        <div></div>
+       
+        <div id ="contactdetails" id="contactdetails"></div>
+
+
+    </div>
+    <div id="professionaldetails" class="professionaldetails">
+    <nav id="navbar" class="navbar">
+        <a href="#AboutMe" onclick="showSection('about')">About</a>
+        <a href="#skill" onclick="showSection('skill')" >Skills</a>
+        <!-- <button type="button" onclick=skill()>Skills</button> -->
+        <a href="#Projects" onclick="showSection('project')" >Projects</a>
+        <a href="#experience" onclick="showSection('experience')">Experience</a>
+        <a href="#" onclick="showSection('education')">Education</a>
+
+    </nav>
+    <div id="about" class="underNav">
+    <h2> About Me</h2>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Java Backend Developer with experience in designing, developing, and maintaining enterprise-level applications using Java, Spring Boot, and SQL. Proficient in RESTful API development, database integration, and writing efficient, maintainable code. Delivered 15+ production-ready solutions while continuously upgrading skills with modern backend technologies.</p>
+<h2> Currently Working :</h2>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Working on the development of E-commerce application handles end to end, both UI and backend functionalities, handles customer order placement.  </p>
+<p> <strong>Technologies:</strong></p><p> Spring MVC, PostgreSQL,REST API, HTML,CSS,Java Script. </p>    
+    </div>
+
+    <div id="skill" class="underNav">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+       
+
+    <span>Java</span>
         <span>SQL</span>
         <span>Python</span>
         <span>Data Structures</span>
@@ -53,62 +81,35 @@
         <span>Windows</span>
         <span>Unix</span>
         <span>Junit</span>
-        
-
     </div>
-</section>
-        </div>
-        <div class="imgsection">
-            <img  src="images/img.JPG" />
-            
-<div class="name-container">
-  <h3 class="name" id="name">Contact Me</h3>
 
-  <div class="dropdown hidden" id="contactDropdown">
-    <p>📧 shaikasma914@gmail.com</p>
-    <p>📞 +91-6304501028</p>
-    <p><a href="https://www.linkedin.com/in/asma-sheikh-0156b3196">My LinkedIN</a></p>
-    <p><a href="https://github.com/sheikhnaaz172">GitHub Profile</a></p>
-    <a href="assets/resume/NShaikAsma.pdf" download class="resume-btn">Download Resume</a>
-   
-
-
-  </div>
-</div>
-
-        </div>
-        </div>
-        <!-- <section class="experience"> -->
-            <div class="aftrimg">
-               <section class="section" id="projects">
-    <h2>Projects</h2>
-
-    <div class="project-card">
+    <div id="project" class="underNav">
+    <!-- <div class="project-card"> -->
         <h3>E-Commerce Backend Application</h3>
-        <p>
-            Spring boot Application for customer order placement.
-            <p><strong>Tech:</strong> Java, Spring Boot, REST API, PostgreSQL,Collection Framework</p>
+        <p>Spring boot Application for customer order placement.</p>
+            <p><strong>Tools & technologies :</strong> Java, Spring Boot, REST API, PostgreSQL,Swagger API Doc, Postman,PGAdmin,Collection Framework</p>
             <a href="https://github.com/sheikhnaaz172/api">GitHub</a>
         </p>
-        <p><strong>Tools & technologies:</strong> Java, Spring Boot, REST API, PostgreSQL,Swagger API Doc, Postman,PGAdmin</p>
+        <!-- <p><strong></strong> </p> -->
         <!-- <a href="#">GitHub</a> -->
-    </div>
+    <!-- </div> -->
 
-    <div class="project-card">
+    <!-- <div class="project-card"> -->
         <h3>Customer Order Placement</h3>
         <p>
             Spring MVC, The Spring application  handles customer order placement from Ui to backend,
             functionalities: Application UI includes a home page,contains navigations that enables to visits product gallery and then we can select products of our choice and can place oders, orderplacement have choice either:<br>
-        •can select list of items and then add to cart to place order<br>
-        •using buy now option can select item and place order as we used to have in ecommerce application<br>
-        •admin can view a list of customers and list of orders that are created.  
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• Can select list of items and then add to cart to place order<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• Using buy now option can select item and place order as we used to have in ecommerce application<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• Admin can view a list of customers and list of orders that are created.  
             
         </p>
-        <p><strong>Tools & technologies:</strong> Java, Spring MVC, Hibernate,PostgreSQL,HTML,CSS,Java Script,Spring Tool Suite,Visual studio, Swagger API testing Doc.</p>
+        <p><strong>Tools & technologies:</strong>
+        <p>Java, Spring MVC, Hibernate,PostgreSQL,HTML,CSS,Java Script,Spring Tool Suite,Visual studio, Swagger API testing Doc.</p>
         <a href="#">GitHub</a>
-        </div>
+        <!-- </div> -->
 
-        <div class="project-card">
+        <!-- <div class="project-card"> -->
         <h3>My Portfolio</h3>
         <p>
             Designed and developed a responsive personal portfolio web application to showcase my professional profile, technical skills, and projects. The portfolio acts as a single-point professional identity and demonstrates my front-end and application design skills. 
@@ -116,10 +117,26 @@
         </p>
         <p><strong>Tools & technologies:</strong> Visual Studio,HTML,CSS,Java Script</p>
         <a href="#">GitHub</a>
-        </div>
- <div class="experience">
-            
-<h2>Experience :</h2>
+        <!-- </div>  -->
+
+        <h3> Project Title:Telstra | Technology: Java-SpringBoot-Microservices:</h3>    
+<p>• Enhanced application functionality using Spring Framework and microservices,improving efficiency.</p> 
+<p>• Improved code quality through JUnit testing,performed lower and higher Env testings by testing tools like Postman. </p>    
+<p>• Automated CI/CD pipelines using Bamboo, SonarQube, and AWS ECS deployments.</p>  
+<p>• Utilized AWS S3 for secure storage of application artifacts and configurations. </p>
+<p>• Ensured continuous code quality, security, and scalability through automated analysis. </p>
+<p>• Led onboarding sessions, accelerating new team productivity and system familiarity </p>
+<p><strong>Tools & technologies:</strong> Java 8, Spring Boot, Microservices, Swagger, JUnit, Postman, AWS (EC2, ECS, S3), Bamboo, SonarQube, Git, Bitbucket, GitLab</p>
+        <a href="#">GitHub</a>
+
+        <h3> Title:DigitalProject|CRMImplementation|Technology:JavaSpringBootMicroservices,SpringDataJpa,ORM</h3>    
+<p>• Designed and implemented RESTful APIs using Spring Boot for consent management </p>   
+<p>• Applied Clean Architecture and dependency injection to ensure modular, testable design </p>    
+<p>•Implemented API key–based security with robust exception handling and validation.</p>  
+<p>•Improved system performance using asynchronous processing and contextual logging.</p>
+        </div> 
+    <div id="experience" class="underNav">
+        <!-- <h2>Experience :</h2> -->
             <h3>INFOSYS | System Engineer | Jan 2022 – Feb 2024 </h3>
             <p>
                 2+ years of experience as a Java Developer at Infosys:
@@ -133,64 +150,32 @@
 <p>• Provided production support, diagnosing issues, ensuring uptime and optimal performance.</p>          
 <p>• Engineered JPA Hibernate microservices for multiple entities, implementing complex relationships.</p>
 <p>• Authored Swagger documentation, validating APIs via interactive testing interfaces consistently.</p>
-            <!-- <div class="exp"> -->
-            </div>
-        
-<h3> Project Title:Telstra | Technology: Java-SpringBoot-Microservices:</h3>    
-<p>• Enhanced application functionality using Spring Framework and microservices,improving efficiency.</p> 
-<p>• Improved code quality through JUnit testing,performed lower and higher Env testings by testing tools like Postman. </p>    
-<p>• Automated CI/CD pipelines using Bamboo, SonarQube, and AWS ECS deployments.</p>  
-<p>• Utilized AWS S3 for secure storage of application artifacts and configurations. </p>
-<p>• Ensured continuous code quality, security, and scalability through automated analysis. </p>
-<p>• Led onboarding sessions, accelerating new team productivity and system familiarity </p>
-<p><strong>Tools & technologies:</strong> Java 8, Spring Boot, Microservices, Swagger, JUnit, Postman, AWS (EC2, ECS, S3), Bamboo, SonarQube, Git, Bitbucket, GitLab</p>
-        <!-- <a href="#">GitHub</a> -->
-<h3> Title:DigitalProject|CRMImplementation|Technology:JavaSpringBootMicroservices,SpringDataJpa,ORM</h3>    
-<p>• Designed and implemented RESTful APIs using Spring Boot for consent management </p>   
-<p>• Applied Clean Architecture and dependency injection to ensure modular, testable design </p>    
-<p>•Implemented API key–based security with robust exception handling and validation.</p>  
-<p>•Improved system performance using asynchronous processing and contextual logging.</p>
-	
-
-
-<p><strong>Tools & technologies:</strong>Java 8, Spring Boot, Microservices, Swagger, PostgreSQL, PGAdmin, Postman, AWS (EC2,RDS), GitHub</p>           
-        
     </div>
-</section> 
-            </div>
-           
-        <!-- </section> -->
+    <div id="education" class="underNav">
+        <br>
+        <br>
+  <h3><strong>Pullaiah College Of Engineering and Technology,Kurnool </strong> </h3>
+  <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2017 - 2021<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bachelor of Technology<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Computer Science and Engineering<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CGPA : 7.0 </p>
+<h3><strong>Narayana Junior College,Kurnool</strong></h3>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2015 - 2017<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Intermediate<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MPCs<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Percentage : 94.4%<br>
+    <h3><strong>Sumedha Educational Academey, Bethamcherla(Knl Dst)</strong></h3>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2014 - 2015<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SSC<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Percentage : 90%<br> 
+
+</p>
+  <!-- <p></p> -->
+    </div>
+    </div>
+</div>
+   
     
-        <!-- <div class="afterimg"> -->
-            <!-- after image section -->
-             <!-- <section class="section" id="projects">
-    <h2>Projects</h2>
-
-    <div class="project-card">
-        <h3>E-Commerce Backend Application</h3>
-        <p>
-            Java & Spring Boot based backend application with user authentication,
-            cart management, and order processing.
-        </p>
-        <p><strong>Tech:</strong> Java, Spring Boot, REST, PostgreSQL</p>
-        <a href="#">GitHub</a>
-    </div>
-
-    <div class="project-card">
-        <h3>User Management System</h3>
-        <p>
-            RESTful application for user registration, login, session handling,
-            and role-based access.
-        </p>
-        <p><strong>Tech:</strong> Java, Spring MVC, Hibernate</p>
-        <a href="#">GitHub</a>
-    </div>
-</section> -->
-
-
-        <!-- </div> -->
-    </div>
-
     <script src="js/portfolio.js" defer></script>
 </body>
 </html>
